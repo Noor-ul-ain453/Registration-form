@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body> 
+    <main>
+        <div>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+        <form>
+            <label for="fname">Enter Your First Name:</label><br>
+            <input type="text" id="fname" name="fname" required>
+            <br>
+            <label for="lname">Enter Your Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required>
+            <br>
+            <label for="email">Enter Your Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Create a New Password:</label><br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <hr>
+            <p>Account type (required)</p>
+            <input type="radio" id="radio" name="account" value="Personal" required>
+            <label for="radio">Personal</label><br>
+            <input type="radio" id="radio" name="account" value="Buissness" required>
+            <label for="radio">Buissness</label>
+            <hr>
+            <label for="profile">Upload a Profile Picture:</label><br>
+            <input type="file" id="profile" name="myprofile" accept="image/*" required><br>
+            <label for="age">Input your age(years):</label><br>
+            <input type="number" id="age" name="myage" required>
+            <br>
+            <label for="aboutus">How did you hear about us?</label><br>
+            <select id="aboutus">
+            <option value="" disabled selected>--(select one)--</option>
+            <option value="Social Media">Social Media </option>
+            <option value="Friends">Friends</option>
+            <option value="Educational Institute">Educational Institute</option>
+            </select><br>
+             <label for="bio">Provide a bio:</label><br>
+             <input type="text" id="bio" name="mybio" placeholder="Like: Passionate to learn about technology">
+             <br>
+             <input type="checkbox" id="terms" name="terms" required>
+             <label for="terms">I accept the <a href="#">terms and conditions</a></label>
+             <button>Submit</button>
+        </form>
+        </div>
+    </main>
+</body>
+</html>
